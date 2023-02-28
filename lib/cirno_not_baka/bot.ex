@@ -14,7 +14,7 @@ defmodule CirnoNotBaka.Bot do
   def bot(), do: @bot
 
   def handle({:command, :start, _msg}, context) do
-    answer(context, "Hi")
+    answer(context, "Hi!")
   end
 
   def handle({:command, :help, _msg}, context) do

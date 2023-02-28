@@ -3,9 +3,14 @@ defmodule CirnoNotBaka.Application do
 
   @impl true
   def start(_type, _args) do
+
     children = [
       ExGram,
-      {CirnoNotBaka.Bot, [method: :polling, token: "token"]}
+      {CirnoNotBaka.Bot, [method: :polling, token: "token"]},
+      %{
+        id: CirnoNotBaka.Repo,
+        start: {CirnoNotBaka.Repo, :start_link,  []}
+      }
     ]
 
     opts = [strategy: :one_for_one, name: CirnoNotBaka.Supervisor]

@@ -14,7 +14,8 @@ defmodule CirnoNotBaka.MixProject do
   def application do
     [
       extra_applications: [:logger],
-      mod: {CirnoNotBaka.Application, []}
+      mod: {CirnoNotBaka.Application, []},
+      applications: [:ecto, :postgrex]
     ]
   end
 
@@ -23,7 +24,9 @@ defmodule CirnoNotBaka.MixProject do
       {:ex_gram, "~> 0.33.0"},
       {:tesla, "~> 1.2"},
       {:hackney, "~> 1.12"},
-      {:jason, ">= 1.0.0"}
+      {:jason, ">= 1.0.0"},
+      {:ecto, "~> 1.0"},
+       {:postgrex, ">= 0.0.0"},
     ]
   end
 end
