@@ -1,5 +1,5 @@
-defmodule CirinoNotBaka.Bot do
-  @bot :cirino_not_baka
+defmodule CirnoNotBaka.Bot do
+  @bot :cirno_not_baka
 
   use ExGram.Bot,
     name: @bot,
@@ -10,7 +10,7 @@ defmodule CirinoNotBaka.Bot do
 
   middleware(ExGram.Middleware.IgnoreUsername)
 
-  @spec bot :: :cirino_not_baka
+  @spec bot :: :cirno_not_baka
   def bot(), do: @bot
 
   def handle({:command, :start, _msg}, context) do
