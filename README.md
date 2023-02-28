@@ -1,4 +1,4 @@
-# CirinoNotBaka
+# CirnoNotBaka
 
 **TODO: Add description**
 
@@ -10,7 +10,7 @@ by adding `cirino_not_baka` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:cirino_not_baka, "~> 0.1.0"}
+    {:cirno_not_baka, "~> 0.1.0"}
   ]
 end
 ```
